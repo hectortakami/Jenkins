@@ -1,0 +1,9 @@
+Started by user [8mha:////4HXoTFaI5Pqi12Hu4m3Ag4F5tQ+8LE/cVblxmIdd058DAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/2nd Jenkins Job - Shell Variables
+[2nd Jenkins Job - Shell Variables] $ /bin/sh -xe /tmp/jenkins485619499112893899.sh
++ date +%r
++ TIME = 06:27:07 PM
+/tmp/jenkins485619499112893899.sh: 2: /tmp/jenkins485619499112893899.sh: TIME: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

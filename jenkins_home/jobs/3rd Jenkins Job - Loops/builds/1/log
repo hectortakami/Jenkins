@@ -1,0 +1,8 @@
+Started by user [8mha:////4HXoTFaI5Pqi12Hu4m3Ag4F5tQ+8LE/cVblxmIdd058DAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/3rd Jenkins Job - Loops
+[3rd Jenkins Job - Loops] $ /bin/bash /tmp/jenkins5166517844536078826.sh
+/tmp/jenkins5166517844536078826.sh: line 7: syntax error near unexpected token `50'
+/tmp/jenkins5166517844536078826.sh: line 7: `        sleep(50)'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,11 @@
+Started by user [8mha:////4HXoTFaI5Pqi12Hu4m3Ag4F5tQ+8LE/cVblxmIdd058DAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/4th Jenkins Job - Run script with parameters
+[4th Jenkins Job - Run script with parameters] $ /bin/sh -xe /tmp/jenkins352396907414595792.sh
++ /opt/jobscript_demo.sh
+Skipping 1
+Loop Nº 2
+Loop Nº 3
+Loop Nº 4
+Loop Nº 5
+Finished: SUCCESS

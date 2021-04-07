@@ -1,0 +1,10 @@
+Started by user [8mha:////4HXoTFaI5Pqi12Hu4m3Ag4F5tQ+8LE/cVblxmIdd058DAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/6th Jenkins Job - Build failed notification ( Slack )
+[6th Jenkins Job - Build failed notification ( Slack )] $ /bin/sh -xe /tmp/jenkins1177874598273900052.sh
++ cho Your planet is Venus
+/tmp/jenkins1177874598273900052.sh: 2: /tmp/jenkins1177874598273900052.sh: cho: not found
+Build step 'Execute shell' marked build as failure
+[Slack Notifications] found #1 as previous completed, non-aborted build
+[Slack Notifications] will send OnEveryFailureNotification because build matches and user preferences allow it
+Finished: FAILURE
