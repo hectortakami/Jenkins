@@ -39,3 +39,5 @@ exit
 cd opt/
 cat jobscript_demo.sh 
 exit
+docker ps
+exit
