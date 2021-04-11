@@ -148,6 +148,59 @@ $ docker ps
 
 **The installation is now complete! :D**
 
+## NodeJS Integration
+
+**Prerequisites:**
+
+- _A GitHub & Docker Hub repos must be created with the project and to allocate the container image in cloud_
+- _The commands `docker` & `docker-compose` must be runnable from inside the Jenkins container in bash._
+- _A `Dockerfile` and `.dockerignore` file must be created describing the NodeJS version & ports for execution in container_
+
+  **Dockerfile**
+
+  ```dockerfile
+  # Dockerfile (Suggested file for TS compilation in a non-root directory "/dist")
+  FROM node:12
+  WORKDIR /app
+  COPY ["package.json", "package-lock.json*", "./"]
+  RUN npm install
+  COPY . .
+  EXPOSE 3000
+  CMD [ "node", "dist/index.js" ]
+  ```
+
+  **.dockerignore**
+
+  ```dockerignore
+  node_modules
+  ```
+
+**Jenkins Plug-in Configuration**
+
+1. Install the **NodeJS** and **CloudBees Docker Build and Publish** plugins from the `Manage Jenkins > Plugin Management`
+2. Navigate to `Dashboard > Manage Jenkins > Global Tool Configuration` and click on **Add NodeJS** button. Enter a name for the manager ("nodejs" recommended) and select the latest version for NPM packet manager provisioning. Then click on **Save**
+
+**Project Setup (from Git repository)**
+
+1. Create a `New Item` as `Freestyle Project`
+2. Select the checkbox from the section `General > Source Code Management > Git`
+3. Paste the HTTPS link to clone the desired Git Repo, adding your credentials as `Username with password`.
+4. Configure the **Build Environment** section, checkin the box `Provide Node & npm bin/ folder to PATH` and verifying that the NodeJS profile name is correctly set in `NodeJS Installation` field.
+5. Configure the **Build** adding the following actions with the `Add build step` button
+   - Create an **Execute shell** action with the bash command `npm install`
+   - Create an **Docker build and publish** action pasting the `Repository name` from the Docker Hub Repo (ex. "jenkins/docker"), adding your credentials as `Username with password`.
+
+_In case of failure with GitHub or Docker credentials verify that the passwords were correctly stored from the `Dashboard > Manage Jenkins > Manage Credentials > [credential] > Update > Change Password` menu._
+
+6. Save & run the project. You can verify the correct execution on Jenkins and returning to Docker Hub to see the latest version of the image uploaded.
+
+**Running the containarized image & application**
+
+1. Pull the container from Docker Hub with the command `docker pull [repository_name]:latest`
+2. Execute container in background `docker run -p [port]:[port] -d [repository_name] (--name [optional_app_name]?`
+3. Verify the running container `docker ps`
+4. Test the NodeJS application running in the IP and Port defined by the app & in the **Dockerfile**
+
 # Notes
 
 ## Commands
